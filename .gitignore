@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/*.db
+logs/*.log
+freqtrade/user_data/data/
+freqtrade/user_data/tradesv3.sqlite
+upstreams/

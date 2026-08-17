@@ -1,0 +1,20 @@
+MemeRadar MVP 1.0
+=================
+
+1. 第一次：直接双击“启动_MVP.bat”。
+2. 浏览器会打开 http://127.0.0.1:8765 。
+3. 默认 PAPER 模拟盘，不会动你的真实 Gate 资金，也不需要钱包私钥。
+4. 首页先点“立即扫描”，新币候选出现后可点“模拟买”。
+5. Gate 回撤策略：右侧输入 TOKEN_USDT 添加观察币对。
+6. 要监控 X：编辑 .env，填写 X_BEARER_TOKEN，再在网页添加 @账号。
+7. 要接本地 Qwen：编辑 .env：
+   LLM_ENABLED=true
+   LLM_BASE_URL=http://127.0.0.1:8092/v1
+   LLM_MODEL=local-model
+8. 如果扫描没数据，先双击“诊断连接.bat”。
+
+重要：MVP 1.0 的 DEX 发现来自 DEX Screener 的 profile/boost 热点流，适合“热点雷达”，
+不是毫秒级新池狙击。真正的新池实时事件 + Solana 自动链上买卖安排在 1.1，优先接 sol-trade-sdk + Helius，
+而不是自己重写底层。
+
+完整说明见 README.md 和 docs/ROADMAP.md。

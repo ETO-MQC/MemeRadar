@@ -1,0 +1,46 @@
+{
+  "app": {
+    "refresh_seconds": 45,
+    "supported_chains": ["solana", "bsc"],
+    "max_candidates_per_scan": 24
+  },
+  "paper": {
+    "starting_balance_usdt": 50.0,
+    "max_open_positions": 8,
+    "max_daily_loss_usdt": 5.0
+  },
+  "collector": {
+    "enabled": true,
+    "auto_paper_buy": false,
+    "stake_usdt": 1.0,
+    "min_score": 72,
+    "max_age_minutes": 360,
+    "min_liquidity_usd": 8000,
+    "min_volume_h1_usd": 3000,
+    "min_buys_m5": 8,
+    "hard_stop_loss_pct": 40,
+    "recover_principal_at_pct": 100,
+    "recover_fraction": 0.5,
+    "moonbag_trailing_stop_pct": 30
+  },
+  "dip": {
+    "enabled": true,
+    "auto_paper_buy": false,
+    "stake_usdt": 2.0,
+    "lookback_minutes": 120,
+    "drawdown_trigger_pct": 15,
+    "rebound_confirm_pct": 1.2,
+    "min_quote_volume_usdt_24h": 100000,
+    "take_profit_pct": 10,
+    "stop_loss_pct": 6,
+    "trailing_start_pct": 6,
+    "trailing_stop_pct": 4,
+    "max_hold_minutes": 360
+  },
+  "gate_watchlist": [
+    "DOGE_USDT",
+    "PEPE_USDT"
+  ],
+  "x_watchlist": [],
+  "rss_feeds": []
+}
